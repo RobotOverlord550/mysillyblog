@@ -1,6 +1,5 @@
 name: Deploy to neocities
 
-# only run on changes to master
 on:
   push:
     branches:
@@ -10,7 +9,7 @@ env:
   FORCE_COLOR: 1
   node_version: lts/*
 
-concurrency: # prevent concurrent deploys doing strange things
+concurrency:
   group: deploy-to-neocities
   cancel-in-progress: true
 
@@ -19,22 +18,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v6
-      # Set up any tools and build steps here
-      # This example uses a Node.js toolchain to build a site
-      - name: Use Node.js
-        uses: actions/setup-node@v6
-        with:
-          node-version: ${{ env.node_version }}
-      - run: npm i
-      - run: npm run build
-      # When the dist_dir is ready, deploy it to neocities
+      - name: Checkout repo
+      - uses: actions/checkout@v4
+
       - name: Deploy to neocities
-        uses: bcomnes/deploy-to-neocities@main # dont use master in production
+      - uses: bcomes/deploy-to-neocities@main
         with:
           api_key: ${{ secrets.NEOCITIES_API_TOKEN }}
           cleanup: true
           dist_dir: public
           protected_files: "dropbox/*"
-          neocities_supporter: false # set this to true if you have a supporter account and want to bypass unsuported files filter.
+          neocities_supporter: false
           preview_before_deploy: true

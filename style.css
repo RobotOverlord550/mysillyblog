@@ -1,0 +1,58 @@
+:root {
+    --tn-c-1: #00ffd2;
+    --tn-c-2: #ff4499;
+    --tn-c-3: #000000;
+    --tn-c-4: #0a0047;
+    --tn-c-5: #004687;
+}
+
+table,
+tr,
+th,
+td {
+    border: 1px solid var(--tn-c-4);
+    border-collapse: collapse;
+    padding: 0.5%;
+}
+
+body {
+    background-color: var(--tn-c-3);
+    padding-inline: 5%;
+    padding-bottom: 5%;
+    padding-top: 1%;
+    font-family: monospace;
+    font-size: large;
+}
+
+h1 {
+    color: var(--tn-c-1);
+    transform: rotateZ(1deg);
+}
+
+h2,
+h3 {
+    color: var(--tn-c-2);
+}
+
+h4,
+p,
+ul,
+li,
+table {
+    color: var(--tn-c-5);
+}
+
+p {
+    padding-left: 1%;
+}
+
+hr {
+    color: var(--tn-c-4);
+}
+
+.post {
+    border: 1px solid var(--tn-c-4);
+    border-collapse: collapse;
+    padding-inline: 1%;
+    border-radius: 1%;
+}

@@ -22,7 +22,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Deploy to neocities
-        uses: bcomes/deploy-to-neocities@main
+        uses: bcomes/deploy-to-neocities@master
         with:
           api_key: ${{ secrets.NEOCITIES_API_TOKEN }}
           cleanup: true

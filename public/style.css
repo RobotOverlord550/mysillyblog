@@ -59,7 +59,6 @@ td {
 h1 {
     color: var(--swty-16-6, #a7f070);
     text-shadow: 0 0 10px var(--swty-16-7, #38b764);
-    width: 100%
 }
 
 h2,

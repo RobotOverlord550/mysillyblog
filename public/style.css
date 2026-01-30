@@ -79,6 +79,7 @@ th {
     padding-left: 1%;
     color: var(--ext-c-purp, #ab4af9);
     text-shadow: 0 0 2px var(--ext-c-purp, #ab4af9);
+    font-size: 32px;
 }
 
 hr {

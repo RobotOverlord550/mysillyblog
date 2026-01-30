@@ -28,14 +28,11 @@
     --ext-c-purp: #ab4af9;
 }
 
-table,
-tr,
-th,
-td {
-    border: 1px solid var(--swty-16-1);
-    border-collapse: collapse;
-    padding: 0.5%;
-    color: var(--swty-16-14)
+@font-face {
+    font-family: 'PixelFont';
+    src: url('./fonts/monogram.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
@@ -43,8 +40,17 @@ body {
     padding-inline: 5%;
     padding-bottom: 5%;
     padding-top: 1%;
-    font-family: monospace;
-    font-size: large;
+    font-size: 32px;
+    font-family: 'PixelFont';
+}
+
+table,
+tr,
+th,
+td {
+    border: 1px solid var(--swty-16-1);
+    border-collapse: collapse;
+    padding: 0.5%;
 }
 
 h1 {
@@ -64,7 +70,9 @@ h4 {
 }
 
 p,
-li {
+li,
+td,
+th {
     padding-left: 1%;
     color: var(--ext-c-purp);
     text-shadow: 0px 0px 2px var(--ext-c-purp);
@@ -77,9 +85,9 @@ hr {
     border: none;
 }
 
-.post {
+iframe {
     border: 3px solid var(--swty-16-8);
-    border-collapse: collapse;
-    padding-inline: 1%;
-    border-radius: 2%;
+    border-radius: 10px;
+    width: 90%;
+    height: 1080px;
 }

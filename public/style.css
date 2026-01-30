@@ -40,7 +40,7 @@ body {
     padding-inline: 5%;
     padding-bottom: 5%;
     padding-top: 1%;
-    font-size: 32px;
+    font-size: 3vw;
     font-family: 'PixelFont';
 }
 
@@ -89,5 +89,5 @@ iframe {
     border: 3px solid var(--swty-16-8);
     border-radius: 10px;
     width: 90%;
-    height: 1080px;
+    height: 50vh;
 }

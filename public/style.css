@@ -40,7 +40,7 @@ body {
     padding-inline: 5%;
     padding-bottom: 5%;
     padding-top: 1%;
-    font-size: 3vw;
+    font-size: calc(1vw + 16px);
     font-family: 'PixelFont';
     width: auto;
     max-width: 720px;
@@ -59,6 +59,7 @@ td {
 h1 {
     color: var(--swty-16-6, #a7f070);
     text-shadow: 0 0 10px var(--swty-16-7, #38b764);
+    width: 100%
 }
 
 h2,
@@ -79,7 +80,6 @@ th {
     padding-left: 1%;
     color: var(--ext-c-purp, #ab4af9);
     text-shadow: 0 0 2px var(--ext-c-purp, #ab4af9);
-    font-size: 32px;
 }
 
 hr {
@@ -89,9 +89,6 @@ hr {
     border: none;
 }
 
-iframe {
-    border: 3px solid var(--swty-16-8);
-    border-radius: 10px;
-    width: 90%;
-    height: 50vh;
+a {
+    color: var(--swty-16-5, #ffcd75);
 }

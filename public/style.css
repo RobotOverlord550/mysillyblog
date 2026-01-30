@@ -40,7 +40,7 @@ body {
     padding-inline: 5%;
     padding-bottom: 5%;
     padding-top: 1%;
-    font-size: calc(1vw + 16px);
+    font-size: 3vw;
     font-family: 'PixelFont';
     width: auto;
     max-width: 720px;
@@ -88,6 +88,9 @@ hr {
     border: none;
 }
 
-a {
-    color: var(--swty-16-5, #ffcd75);
+iframe {
+    border: 3px solid var(--swty-16-8);
+    border-radius: 10px;
+    width: 90%;
+    height: 50vh;
 }

@@ -1,31 +1,34 @@
 :root {
-    /*Tokyo Night Palette*/
-    --tn-c-1: #00ffd2;
-    --tn-c-2: #ff4499;
-    --tn-c-3: #000000;
-    --tn-c-4: #0a0047;
-    --tn-c-5: #004687;
+    /*Tokyo Night Palette
+    1: #00ffd2;
+    2: #ff4499;
+    3: #000000;
+    4: #0a0047;
+    5: #004687;
+    */
 
-    /*Sweetie 16 Palette*/
-    --swty-16-1: #1a1c2c;
-    --swty-16-2: #5d275d;
-    --swty-16-3: #b13e53;
-    --swty-16-4: #ef7d57;
-    --swty-16-5: #ffcd75;
-    --swty-16-6: #a7f070;
-    --swty-16-7: #38b764;
-    --swty-16-8: #257179;
-    --swty-16-9: #29366f;
-    --swty-16-10: #3b5dc9;
-    --swty-16-11: #41a6f6;
-    --swty-16-12: #73eff7;
-    --swty-16-13: #f4f4f4;
-    --swty-16-14: #94b0c2;
-    --swty-16-15: #566c86;
-    --swty-16-16: #333c57;
+    /*Sweetie 16 Palette
+    1: #1a1c2c;
+    2: #5d275d;
+    3: #b13e53;
+    4: #ef7d57;
+    5: #ffcd75;
+    6: #a7f070;
+    7: #38b764;
+    8: #257179;
+    9: #29366f;
+    10: #3b5dc9;
+    11: #41a6f6;
+    12: #73eff7;
+    13: #f4f4f4;
+    14: #94b0c2;
+    15: #566c86;
+    16: #333c57;
+    */
 
-    /*Extra Colors*/
-    --ext-c-purp: #ab4af9;
+    /*Extra Colors
+    purple: #ab4af9;
+    */
 }
 
 @font-face {

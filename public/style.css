@@ -92,6 +92,15 @@ a {
     color: var(--swty-16-5, #ffcd75);
 }
 
+.back-home {
+    border-radius: 25px;
+    background-color: var(--swty-16-9, #29366f);
+    width: 11vh;
+    height: 4vh;
+    margin-bottom: 1vh;
+    text-align: center;
+}
+
 .main-content {
     padding-bottom: 5%;
     padding-top: 1%;
@@ -104,10 +113,6 @@ a {
     gap: 10px;
 }
 
-.flex-container div {
-    border-radius: 25px;
-}
-
 .flex-container div.center {
     width: 40%;
 }
@@ -117,6 +122,7 @@ a {
 }
 
 .welcome {
+    border-radius: 25px;
     background-color: var(--swty-16-9, #29366f);
     padding-bottom: 0.5%;
     padding-inline: 5%;
@@ -127,19 +133,48 @@ a {
     padding-top: 1%;
     padding-bottom: 0.5%;
     padding-inline: 5%;
-    border-radius: 50px;
+    border-radius: 25px;
 }
 
 .blog-topics {
     background-color: var(--swty-16-9, #29366f);
     padding-bottom: 0.5%;
     padding-inline: 8%;
+    border-radius: 25px;
 }
 
 .blog-latest-posts {
     background-color: var(--swty-16-9, #29366f);  
     padding-bottom: 0.5%;
     padding-inline: 8%;
+    border-radius: 25px;
+}
+
+.bio {
+    background-color: var(--swty-16-9, #29366f);
+    padding-bottom: 0.5%;
+    padding-inline: 5%;
+    border-radius: 25px;
+}
+
+.bio-image {
+    background-color: var(--swty-16-9, #29366f);
+    padding-bottom: 5%;
+    padding-inline: 8%;
+    border-radius: 25px;
+}
+
+.bio-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.contact {
+    border-radius: 25px;
+    background-color: var(--swty-16-9, #29366f);
+    padding-top: 1%;
+    padding-bottom: 0.5%;
+    padding-inline: 2%;
 }
 
 .topnav {
@@ -159,6 +194,7 @@ a {
     border-radius: 1vh;
     padding-inline: 1vh;
     float: left;
+    margin-right: 20px;
 }
 
 .topnav a:hover {

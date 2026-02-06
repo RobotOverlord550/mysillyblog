@@ -44,7 +44,7 @@ body {
 }
 
 table, tr, th, td {
-    border: 1px solid #1a1c2c;
+    border: 1px solid var(--swty-1);
     border-collapse: collapse;
 }
 

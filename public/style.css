@@ -1,53 +1,49 @@
 :root {
-    /*Tokyo Night Palette
-    1: #00ffd2;
-    2: #ff4499;
-    3: #000000;
-    4: #0a0047;
-    5: #004687;
-    */
+    /* Tokyo Night Palette */
+    --tn-c-1: #00ffd2;
+    --tn-c-2: #ff4499;
+    --tn-c-3: #000000;
+    --tn-c-4: #0a0047;
+    --tn-c-5: #004687;
 
-    /*Sweetie 16 Palette
-    1: #1a1c2c;
-    2: #5d275d;
-    3: #b13e53;
-    4: #ef7d57;
-    5: #ffcd75;
-    6: #a7f070;
-    7: #38b764;
-    8: #257179;
-    9: #29366f;
-    10: #3b5dc9;
-    11: #41a6f6;
-    12: #73eff7;
-    13: #f4f4f4;
-    14: #94b0c2;
-    15: #566c86;
-    16: #333c57;
-    */
+    /* Sweetie 16 Palette */
+    --swty-1: #1a1c2c;
+    --swty-2: #5d275d;
+    --swty-3: #b13e53;
+    --swty-4: #ef7d57;
+    --swty-5: #ffcd75;
+    --swty-6: #a7f070;
+    --swty-7: #38b764;
+    --swty-8: #257179;
+    --swty-9: #29366f;
+    --swty-10: #3b5dc9;
+    --swty-11: #41a6f6;
+    --swty-12: #73eff7;
+    --swty-13: #f4f4f4;
+    --swty-14: #94b0c2;
+    --swty-15: #566c86;
+    --swty-16: #333c57;
 
-    /*Extra Colors
-    purple: #ab4af9;
-    */
+    /* Extra */
+    --purple: #ab4af9;
 }
 
 @font-face {
     font-family: 'PixelFont';
-    src: url('./fonts/monogram.ttf') format('truetype');
+    src: url('/fonts/monogram.ttf') format('truetype');
     font-weight: normal;
 }
 
+/* ---------------- BASE ---------------- */
+
 body {
-    font-family: 'PixelFont';
+    font-family: 'PixelFont', monospace;
     font-size: large;
-    margin: auto;
-    background-image: url('https://bettysgraphics.neocities.org/images/backgrounds/pattern%2059.gif');
+    margin: 0 auto;
+    background-image: url("https://bettysgraphics.neocities.org/images/backgrounds/pattern%20247.gif");
 }
 
-table,
-tr,
-th,
-td {
+table, tr, th, td {
     border: 1px solid #1a1c2c;
     border-collapse: collapse;
 }
@@ -55,11 +51,10 @@ td {
 h1 {
     color: #a7f070;
     text-shadow: 0 0 10px #38b764;
-    width: 100%
+    width: 100%;
 }
 
-h2,
-h3 {
+h2, h3 {
     color: #73eff7;
     text-shadow: 0 0 10px #41a6f6;
 }
@@ -69,17 +64,13 @@ h4 {
     text-shadow: 0 0 10px #41a6f6;
 }
 
-p,
-li,
-td,
-th {
+p, li, td, th {
     color: #ab4af9;
     text-shadow: 0 0 2px #ab4af9;
     font-size: larger;
 }
 
 hr {
-    color: #257179;
     background-color: #257179;
     height: 3px;
     border: none;
@@ -89,32 +80,24 @@ a {
     color: #ffcd75;
 }
 
-.general-border {
-    border-radius: 25px;
-}
+/* ---------------- UTILS ---------------- */
 
-.general-color {
-    background-color: #29366f;
-}
+.general-border { border-radius: 25px; }
+.general-color { background-color: #29366f; }
 
-.main-content .back-home {
-    width: 11vh;
-    height: 4vh;
-    margin-bottom: 1vh;
-    text-align: center;
-}
+/* ---------------- LAYOUT ---------------- */
 
-.main-content .under-construction {
+.main-content {
     padding: 1%;
 }
 
 .main-content .panel {
-    padding: 1%;
+    padding: 2vh;
     max-width: 720px;
 }
 
-.main-content {
-    padding: 1%;
+.main-content .panel img {
+    width: 100%;
 }
 
 .main-content .flex-container {
@@ -123,59 +106,18 @@ a {
     gap: 3vh;
 }
 
-@media (max-width: 768px) {
-    .main-content .flex-container {
-        display: flex;
-        flex-direction: column;
-        padding-left: 6vh;
-        padding-right: 5vh;
-    }
-}
+.main-content .flex-container .center-panel { width: 40%; }
+.main-content .flex-container .side-panel { width: 20%; }
 
-.main-content .flex-container .center-panel {
-    width: 40%;
-}
-
-@media (max-width: 768px) {
-    .main-content .flex-container .center-panel {
-        width: 90%;
-    }
-}
-
-.main-content .flex-container .side-panel {
-    width: 20%;
-}
-
-@media (max-width: 768px) {
-    .main-content .flex-container .side-panel {
-        width: 90%;
-    }
-}
-
-.main-content .panel {
-    padding: 2vh;
-}
-
-.main-content .panel img {
-    width: 100%;
-}
+/* ---------------- NAV ---------------- */
 
 .topnav {
     overflow: hidden;
-    padding-right: 1%;
-    padding-left: 1%;
+    padding: 1%;
     width: 40%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     background-color: #3b5dc9;
     font-size: 2vh;
-}
-
-@media (max-width: 768px) {
-    .topnav {
-        width: 90%;
-    }
 }
 
 .topnav a {
@@ -184,68 +126,72 @@ a {
     float: left;
     margin-right: 20px;
     border-radius: 20px;
-    padding-inline: 1%;
+    padding: 1%;
 }
 
-.topnav a:hover {
-    background-color: #38b764;
-}
-
-.topnav a .active {
+.topnav a:hover,
+.topnav .active {
     background-color: #38b764;
 }
 
 .topnav img {
-    float:  right;
+    float: right;
     height: 9vh;
 }
 
-@keyframes scroll{
-    0% {
-        transform: translateX(2170px);        
-    }
-    100% {
-        transform: translateX(-2170px);
-    }
-}
+/* ---------------- SCROLL ---------------- */
 
-@media (max-width: 768px) {
-    @keyframes scroll {
-        0% {
-            transform: translateX(770px);
-        }
-        100% {
-            transform: translateX(-2170px);
-        }
-    }
+@keyframes scroll {
+    0% { transform: translateX(110%); }
+    100% { transform: translateX(-2170px); }
 }
 
 .infinite-scroll {
     animation: scroll 45s linear infinite;
 }
 
-@media (max-width: 768px) {
-    animation: scroll 60s linear infinite;
-}
-
 .infinite-scroll h3 {
     background-color: #a7f070;
     color: red;
-    width:  2160px;
+    width: 2160px;
     padding-left: 1%;
 }
 
-@media (max-width: 768px) {
-    .infinite-scroll h3 {
-        padding: 1vh;
-    }
-}
+/* ---------------- WEBRINGS ---------------- */
 
 .webrings {
     display: flex;
     flex-wrap: wrap;
+    gap: 1vh;
 }
 
-.webring {
-    width: 10vh;
+.webrings a img {
+    width: 88px;
+    height: auto;
+}
+
+/* ---------------- MOBILE ---------------- */
+
+@media (max-width: 768px) {
+
+    .topnav { width: 90%; }
+
+    .main-content .flex-container {
+        flex-direction: column;
+        padding-left: 6vh;
+        padding-right: 5vh;
+    }
+
+    .main-content .flex-container .center-panel,
+    .main-content .flex-container .side-panel {
+        width: 90%;
+    }
+
+    .infinite-scroll {
+        animation: scroll 60s linear infinite;
+    }
+
+    .infinite-scroll h3 {
+        padding: 1vh;
+    }
 }

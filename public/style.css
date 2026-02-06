@@ -123,12 +123,37 @@ a {
     gap: 3vh;
 }
 
+@media (max-width: 768px) {
+    .main-content .flex-container {
+        display: flex;
+        flex-direction: column;
+        padding-left: 6vh;
+        padding-right: 5vh;
+    }
+}
+
 .main-content .flex-container .center-panel {
     width: 40%;
 }
 
+@media (max-width: 768px) {
+    .main-content .flex-container .center-panel {
+        width: 90%;
+    }
+}
+
 .main-content .flex-container .side-panel {
     width: 20%;
+}
+
+@media (max-width: 768px) {
+    .main-content .flex-container .side-panel {
+        width: 90%;
+    }
+}
+
+.main-content .panel {
+    padding: 2vh;
 }
 
 .main-content .panel img {
@@ -137,24 +162,29 @@ a {
 
 .topnav {
     overflow: hidden;
-    padding: .5%;
+    padding-right: 1%;
+    padding-left: 1%;
     width: 40%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     background-color: #3b5dc9;
+    font-size: 2vh;
+}
 
+@media (max-width: 768px) {
+    .topnav {
+        width: 90%;
+    }
 }
 
 .topnav a {
     color: #a7f070;
     text-align: center;
-    padding: 1%;
-    padding-top: .5%;
-    padding-bottom: .5%;
     float: left;
     margin-right: 20px;
     border-radius: 20px;
+    padding-inline: 1%;
 }
 
 .topnav a:hover {
@@ -170,3 +200,52 @@ a {
     height: 9vh;
 }
 
+@keyframes scroll{
+    0% {
+        transform: translateX(2170px);        
+    }
+    100% {
+        transform: translateX(-2170px);
+    }
+}
+
+@media (max-width: 768px) {
+    @keyframes scroll {
+        0% {
+            transform: translateX(770px);
+        }
+        100% {
+            transform: translateX(-2170px);
+        }
+    }
+}
+
+.infinite-scroll {
+    animation: scroll 45s linear infinite;
+}
+
+@media (max-width: 768px) {
+    animation: scroll 60s linear infinite;
+}
+
+.infinite-scroll h3 {
+    background-color: #a7f070;
+    color: red;
+    width:  2160px;
+    padding-left: 1%;
+}
+
+@media (max-width: 768px) {
+    .infinite-scroll h3 {
+        padding: 1vh;
+    }
+}
+
+.webrings {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.webring {
+    width: 10vh;
+}

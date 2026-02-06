@@ -7,25 +7,22 @@
     --tn-c-5: #004687;
 
     /* Sweetie 16 Palette */
-    --swty-1: #1a1c2c;
-    --swty-2: #5d275d;
-    --swty-3: #b13e53;
-    --swty-4: #ef7d57;
-    --swty-5: #ffcd75;
-    --swty-6: #a7f070;
-    --swty-7: #38b764;
-    --swty-8: #257179;
-    --swty-9: #29366f;
-    --swty-10: #3b5dc9;
-    --swty-11: #41a6f6;
-    --swty-12: #73eff7;
-    --swty-13: #f4f4f4;
-    --swty-14: #94b0c2;
-    --swty-15: #566c86;
-    --swty-16: #333c57;
-
-    /* Extra */
-    --purple: #ab4af9;
+    --swty-very-dark-gray: #1a1c2c;
+    --swty-dark-purple: #5d275d;
+    --swty-light-red: #b13e53;
+    --swty-light-orange: #ef7d57;
+    --swty-light-yellow: #ffcd75;
+    --swty-lime: #a7f070;
+    --swty-light-green: #38b764;
+    --swty-dark-cyan: #257179;
+    --swty-dark-blue: #29366f;
+    --swty-blue: #3b5dc9;
+    --swty-light-blue: #41a6f6;
+    --swty-light-cyan: #73eff7;
+    --swty-very-light-red: #f4f4f4;
+    --swty-gray: #94b0c2;
+    --swty-slightly-dark-gray: #566c86;
+    --swty-dark-gray: #333c57;
 }
 
 @font-face {
@@ -44,34 +41,34 @@ body {
 }
 
 table, tr, th, td {
-    border: 1px solid var(--swty-1);
+    border: 1px solid var(--swty-dark-gray);
     border-collapse: collapse;
 }
 
 h1 {
     color: #a7f070;
-    text-shadow: 0 0 10px #38b764;
+    text-shadow: 0 0 10px var(--swty-light-green);
     width: 100%;
 }
 
 h2, h3 {
     color: #73eff7;
-    text-shadow: 0 0 10px #41a6f6;
+    text-shadow: 0 0 10px var(--swty-light-blue);
 }
 
 h4 {
     color: #41a6f6;
-    text-shadow: 0 0 10px #41a6f6;
+    text-shadow: 0 0 10px var(--swty-light-blue);
 }
 
 p, li, td, th {
     color: #ab4af9;
-    text-shadow: 0 0 2px #ab4af9;
+    text-shadow: 0 0 2px purple;
     font-size: larger;
 }
 
 hr {
-    background-color: #257179;
+    background-color: var(--swty-dark-cyan);
     height: 3px;
     border: none;
 }
@@ -83,7 +80,7 @@ a {
 /* ---------------- UTILS ---------------- */
 
 .general-border { border-radius: 25px; }
-.general-color { background-color: #29366f; }
+.general-color { background-color: var(--swty-dark-blue); }
 
 /* ---------------- LAYOUT ---------------- */
 
@@ -116,7 +113,7 @@ a {
     padding: 1%;
     width: 40%;
     margin: auto;
-    background-color: #3b5dc9;
+    background-color: var(--swty-light-blue);
     font-size: 2vh;
 }
 
@@ -131,7 +128,7 @@ a {
 
 .topnav a:hover,
 .topnav .active {
-    background-color: #38b764;
+    background-color: var(--swty-blue);
 }
 
 .topnav img {
@@ -151,7 +148,7 @@ a {
 }
 
 .infinite-scroll h3 {
-    background-color: #a7f070;
+    background-color: var(--swty-lime);
     color: red;
     width: 2160px;
     padding-left: 1%;

@@ -1,11 +1,4 @@
 :root {
-    /* Tokyo Night Palette */
-    --tn-c-1: #00ffd2;
-    --tn-c-2: #ff4499;
-    --tn-c-3: #000000;
-    --tn-c-4: #0a0047;
-    --tn-c-5: #004687;
-
     /* Sweetie 16 Palette */
     --swty-very-dark-gray: #1a1c2c;
     --swty-dark-purple: #5d275d;
@@ -74,7 +67,7 @@ hr {
 }
 
 a {
-    color: #ffcd75;
+    color: var(--swty-light-yellow);
 }
 
 /* ---------------- UTILS ---------------- */
@@ -83,6 +76,11 @@ a {
 .general-color { background-color: var(--swty-dark-blue); }
 
 /* ---------------- LAYOUT ---------------- */
+.title {
+    text-align: center;
+    font-size: 5vh;
+    color: var(--swty-light-yellow);
+}
 
 .main-content {
     padding: 1%;
@@ -107,10 +105,13 @@ a {
 .main-content .flex-container .side-panel { width: 20%; }
 
 /* ---------------- NAV ---------------- */
+.back-home {
+    width: 6%;
+    padding-left: 1%;
+}
 
 .topnav {
     overflow: hidden;
-    padding: 1%;
     width: 40%;
     margin: auto;
     background-color: var(--swty-light-blue);
@@ -133,7 +134,7 @@ a {
 
 .topnav img {
     float: right;
-    height: 9vh;
+    height: 10vh;
 }
 
 /* ---------------- SCROLL ---------------- */

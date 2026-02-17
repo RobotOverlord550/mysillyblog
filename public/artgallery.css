@@ -1,0 +1,12 @@
+body {
+  background-image: url("https://bettysgraphics.neocities.org/images/backgrounds/bubbles%204.gif");
+}
+
+img {
+  height: 360px;
+  border-radius: 10px;
+}
+
+.pixel {
+  image-rendering: pixelated;
+}

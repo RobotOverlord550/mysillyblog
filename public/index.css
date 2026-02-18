@@ -18,16 +18,22 @@
   --swty-dark-gray: #333c57;
 }
 
-@font-face {
-  font-family: 'PixelFont';
-  src: url('/fonts/monogram.ttf') format('truetype');
-  font-weight: normal;
+.federant-regular {
+  font-family: "Federant", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pixelify-sans {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* ---------------- BASE ---------------- */
 
 body {
-  font-family: 'PixelFont', monospace;
   font-size: large;
   margin: 0 auto;
   background-image: url("https://bettysgraphics.neocities.org/images/backgrounds/017C.jpg");
@@ -62,8 +68,7 @@ p,
 li,
 td,
 th {
-  color: #ab4af9;
-  text-shadow: 0 0 2px purple;
+  color: var(--swty-very-dark-gray);
   font-size: larger;
 }
 
@@ -96,7 +101,7 @@ img {
 /* ---------------- LAYOUT ---------------- */
 .title {
   text-align: center;
-  font-size: 5vh;
+  font-size: xx-large;
   color: var(--swty-light-yellow);
 }
 
@@ -129,7 +134,7 @@ img {
 
 /* ---------------- NAV ---------------- */
 .back-home {
-  width: 6%;
+  width: 150px;
   padding-left: 1%;
 }
 
@@ -138,7 +143,7 @@ img {
   width: 40%;
   margin: auto;
   background-image: radial-gradient(var(--swty-blue), var(--swty-light-cyan));
-  font-size: 2vh;
+  font-size: large;
   display: flex;
   padding-inline: 1%;
   align-items: center;
@@ -204,8 +209,12 @@ img {
 /* ---------------- MOBILE ---------------- */
 
 @media (max-width: 768px) {
+  body {
+    font-size: small;
+  }
 
   .topnav {
+    font-size: medium;
     width: 90%;
   }
 
@@ -221,6 +230,10 @@ img {
   }
 
   .infinite-scroll {
-    animation: scroll 60s linear infinite;
+    animation: scroll 10s linear infinite;
+  }
+
+  .back-home {
+    width: 100px;
   }
 }

@@ -71,8 +71,43 @@ th {
   font-size: larger;
 }
 
+@keyframes rainbow {
+  0% {
+    background-color: red;
+  }
+
+  14.3% {
+    background-color: orange;
+  }
+
+  28.6% {
+    background-color: yellow;
+  }
+
+  42.9% {
+    background-color: lime;
+  }
+
+  57.4% {
+    background-color: cyan;
+  }
+
+  71.4% {
+    background-color: plum;
+  }
+
+  85.7% {
+    background-color: violet;
+  }
+
+  100% {
+    background-color: red;
+  }
+}
+
 hr {
-  background-color: var(--swty-dark-cyan);
+  background-color: red;
+  animation: rainbow 5s linear infinite;
   height: 3px;
   border: none;
 }
@@ -84,17 +119,62 @@ a {
 
 img {
   image-rendering: pixelated;
-  width: 100%;
 }
 
 /* ---------------- UTILS ---------------- */
 
+@keyframes rainbow-border {
+  0% {
+    border-color: red;
+  }
+
+  14.3% {
+    border-color: orange;
+  }
+
+  28.6% {
+    border-color: yellow;
+  }
+
+  42.9% {
+    border-color: lime;
+  }
+
+  57.4% {
+    border-color: cyan;
+  }
+
+  71.4% {
+    border-color: plum;
+  }
+
+  85.7% {
+    border-color: violet;
+  }
+
+  100% {
+    border-color: red;
+  }
+}
+
 .general-border {
-  border-radius: 25px;
+  border-style: solid;
+  border-color: magenta;
+  animation: rainbow-border 5s linear infinite
 }
 
 .general-color {
-  background-image: radial-gradient(var(--swty-dark-blue), var(--swty-blue));
+  background: var(--swty-blue);
+}
+
+.small-image {
+  width: 49%;
+  height: auto;
+}
+
+.full-image {
+  width: 100%;
+  height: auto;
 }
 
 /* ---------------- LAYOUT ---------------- */
@@ -107,10 +187,6 @@ img {
 .main-content .panel {
   padding: 2vh;
   max-width: 720px;
-}
-
-.main-content .panel img {
-  width: 100%;
 }
 
 .main-content .flex-container {
@@ -136,7 +212,7 @@ img {
 .topnav {
   overflow: hidden;
   width: 40%;
-  background-image: radial-gradient(var(--swty-blue), var(--swty-light-cyan));
+  background: var(--swty-dark-blue);
   font-size: large;
   display: flex;
   margin: auto;
@@ -184,7 +260,7 @@ img {
   overflow: hidden;
   animation: scroll 30s linear infinite;
   width: 25%;
-  background-image: radial-gradient(var(--swty-light-green), var(--swty-lime));
+  background: var(--swty-lime);
   text-align: center;
   font-size: small;
 }

@@ -114,7 +114,14 @@ hr {
 
 a {
   color: var(--swty-light-yellow);
-  text-decoration: none;
+  border-radius: 20px;
+  padding-inline: 10px;
+  margin: center;
+  text-align: center;
+}
+
+a:hover {
+  background-color: var(--swty-blue);
 }
 
 img {
@@ -163,8 +170,12 @@ img {
   animation: rainbow-border 5s linear infinite
 }
 
-.general-color {
-  background: var(--swty-blue);
+.background-color-1 {
+  background-color: var(--swty-light-blue);
+}
+
+.background-color-2 {
+  background-color: var(--swty-dark-blue);
 }
 
 .small-image {
@@ -184,22 +195,22 @@ img {
   color: var(--swty-light-yellow);
 }
 
-.main-content .panel {
+.panel {
   padding: 2vh;
   max-width: 720px;
 }
 
-.main-content .flex-container {
+.flex-container {
   display: flex;
   justify-content: center;
   gap: 1vw;
 }
 
-.main-content .flex-container .center-panel {
+.flex-container .center-panel {
   width: 40%;
 }
 
-.main-content .flex-container .side-panel {
+.flex-container .side-panel {
   width: 20%;
 }
 
@@ -226,18 +237,6 @@ img {
   margin: center;
   text-align: center;
   width: 100%;
-}
-
-.topnav a {
-  color: var(--swty-light-yellow);
-  border-radius: 20px;
-  padding-inline: 10px;
-  margin: center;
-  text-align: center;
-}
-
-.topnav a:hover {
-  background-color: var(--swty-blue);
 }
 
 /* ---------------- SCROLL ---------------- */

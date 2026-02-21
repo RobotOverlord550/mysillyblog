@@ -105,10 +105,6 @@ img {
   color: var(--swty-light-yellow);
 }
 
-.main-content {
-  padding: 1%;
-}
-
 .main-content .panel {
   padding: 2vh;
   max-width: 720px;
@@ -121,7 +117,7 @@ img {
 .main-content .flex-container {
   display: flex;
   justify-content: center;
-  gap: 3vh;
+  gap: 1vw;
 }
 
 .main-content .flex-container .center-panel {
@@ -198,7 +194,6 @@ img {
 .webrings {
   display: flex;
   flex-wrap: wrap;
-  gap: 1vh;
 }
 
 .webrings a img {
@@ -208,7 +203,7 @@ img {
 
 /* ---------------- MOBILE ---------------- */
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   body {
     font-size: small;
   }
@@ -220,8 +215,7 @@ img {
 
   .main-content .flex-container {
     flex-direction: column;
-    padding-left: 6vh;
-    padding-right: 5vh;
+    align-items: center;
   }
 
   .main-content .flex-container .center-panel,

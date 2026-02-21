@@ -208,6 +208,10 @@ img {
     font-size: small;
   }
 
+  p {
+    font-size: large;
+  }
+
   .topnav {
     font-size: medium;
     width: 90%;

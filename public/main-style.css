@@ -50,7 +50,6 @@ td {
 h1 {
   color: var(--swty-lime);
   text-shadow: 0 0 10px var(--swty-light-green);
-  width: 100%;
 }
 
 h2,
@@ -137,23 +136,26 @@ img {
 .topnav {
   overflow: hidden;
   width: 40%;
-  margin: auto;
   background-image: radial-gradient(var(--swty-blue), var(--swty-light-cyan));
   font-size: large;
   display: flex;
-  padding-inline: 1%;
+  margin: auto;
+  justify-content: center;
   align-items: center;
+  text-align: center;
+  padding-right: 1.5vw;
 }
 
 .topnav h1 {
   margin: center;
   text-align: center;
+  width: 100%;
 }
 
 .topnav a {
   color: var(--swty-light-yellow);
   border-radius: 20px;
-  padding-inline: 5%;
+  padding-inline: 10px;
   margin: center;
   text-align: center;
 }
@@ -170,7 +172,7 @@ img {
   }
 
   50% {
-    transform: translateX(100%);
+    transform: translateX(300%);
   }
 
   100% {
@@ -181,12 +183,15 @@ img {
 .infinite-scroll {
   overflow: hidden;
   animation: scroll 30s linear infinite;
-  width: 50%;
+  width: 25%;
   background-image: radial-gradient(var(--swty-light-green), var(--swty-lime));
+  text-align: center;
+  font-size: small;
 }
 
 .infinite-scroll h3 {
-  color: var(--swty-blue);
+  color: red;
+  text-shadow: initial;
 }
 
 /* ---------------- WEBRINGS ---------------- */
@@ -227,8 +232,23 @@ img {
     width: 90%;
   }
 
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+
+    50% {
+      transform: translateX(100%);
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
   .infinite-scroll {
     animation: scroll 10s linear infinite;
+    width: 50%;
   }
 
   .back-home {

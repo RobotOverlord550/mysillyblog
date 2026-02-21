@@ -174,18 +174,31 @@ img {
   background-image: url("https://bettysgraphics.neocities.org/images/backgrounds/water.gif");
 }
 
+.background-color-1 h1,
+.background-color-1 h2 {
+  color: darkmagenta;
+  text-shadow: none;
+}
+
+.background-color-1 p,
+.background-color-1 a {
+  color: purple;
+}
+
 .background-color-2 {
-  background-image: url("https://bettysgraphics.neocities.org/images/backgrounds/stars%206.jpg");
+  background-image: url("https://bettysgraphics.neocities.org/images/backgrounds/pattern%20625.gif");
 }
 
-.small-image {
-  width: 49%;
-  height: auto;
+.background-color-3 {
+  background-image: url("https://bettysgraphics.neocities.org/images/backgrounds/pattern%2053.gif");
 }
 
-.full-image {
-  width: 100%;
-  height: auto;
+.no-display-desktop {
+  display: none;
+}
+
+.no-display-mobile {
+  display: initial;
 }
 
 /* ---------------- LAYOUT ---------------- */
@@ -210,13 +223,40 @@ img {
   width: 35%;
 }
 
-.flex-container .center-panel h1 {
-  color: darkmagenta;
-  text-shadow: initial;
+.flex-container .center-panel * {
+  text-align: center;
+}
+
+.flex-container .center-panel li {
+  text-align: left;
 }
 
 .flex-container .side-panel {
-  width: 25%;
+  width: 15%;
+}
+
+.flex-container .side-panel-left * {
+  text-align: left;
+}
+
+.flex-container .side-panel-right *,
+.flex-container .side-panel-left-img {
+  text-align: right;
+}
+
+.profile-pic img {
+  width: 100%
+}
+
+.image-collection,
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.image-collection img {
+  align-self: center;
 }
 
 /* ---------------- NAV ---------------- */
@@ -265,7 +305,7 @@ img {
   width: 25%;
   background-image: url("https://bettysgraphics.neocities.org/images/backgrounds/pattern%20562.gif");
   text-align: center;
-  font-size: small;
+  font-size: medium;
 }
 
 .infinite-scroll h3 {
@@ -285,6 +325,13 @@ img {
   height: auto;
 }
 
+/* ---------------- CHAT ---------------- */
+
+.chat {
+  background-image: url("https://bettysgraphics.neocities.org/images/gadgets/xbox%201.gif");
+}
+
+/* ---------------- QUICKPOSTS ---------------- */
 /* ---------------- MOBILE ---------------- */
 
 @media (max-width: 1200px) {
@@ -296,23 +343,29 @@ img {
     font-size: large;
   }
 
-  .topnav {
-    font-size: medium;
-    width: 90%;
-  }
-
-  .main-content .flex-container {
+  .flex-container {
     flex-direction: column;
     align-items: center;
   }
 
   .flex-container .center-panel,
-  .flex-container .side-panel {
+  .flex-container .side-panel,
+  .flex-container .topnav {
     width: 90%;
+  }
+
+  .flex-container .side-panel h1,
+  .flex-container .side-panel h2,
+  .flex-container .side-panel p {
+    text-align: center;
   }
 
   .flex-container .center-panel {
     order: -1;
+  }
+
+  .flex-container .topnav {
+    order: 0;
   }
 
   @keyframes scroll {
@@ -336,5 +389,13 @@ img {
 
   .back-home {
     width: 100px;
+  }
+
+  .no-display-desktop {
+    display: initial;
+  }
+
+  .no-display-mobile {
+    display: none;
   }
 }

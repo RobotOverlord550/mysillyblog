@@ -36,7 +36,7 @@
 body {
   font-size: large;
   margin: 0 auto;
-  background-image: url("https://bettysgraphics.neocities.org/images/backgrounds/017C.jpg");
+  background-image: url("https://bettysgraphics.neocities.org/images/backgrounds/stars%202.gif");
 }
 
 table,
@@ -67,7 +67,7 @@ p,
 li,
 td,
 th {
-  color: var(--swty-very-dark-gray);
+  color: purple;
   font-size: larger;
 }
 
@@ -171,11 +171,11 @@ img {
 }
 
 .background-color-1 {
-  background-color: var(--swty-light-blue);
+  background-image: url("https://bettysgraphics.neocities.org/images/backgrounds/water.gif");
 }
 
 .background-color-2 {
-  background-color: var(--swty-dark-blue);
+  background-image: url("https://bettysgraphics.neocities.org/images/backgrounds/stars%206.jpg");
 }
 
 .small-image {
@@ -207,11 +207,16 @@ img {
 }
 
 .flex-container .center-panel {
-  width: 40%;
+  width: 35%;
+}
+
+.flex-container .center-panel h1 {
+  color: darkmagenta;
+  text-shadow: initial;
 }
 
 .flex-container .side-panel {
-  width: 20%;
+  width: 25%;
 }
 
 /* ---------------- NAV ---------------- */
@@ -223,7 +228,6 @@ img {
 .topnav {
   overflow: hidden;
   width: 40%;
-  background: var(--swty-dark-blue);
   font-size: large;
   display: flex;
   margin: auto;
@@ -259,7 +263,7 @@ img {
   overflow: hidden;
   animation: scroll 30s linear infinite;
   width: 25%;
-  background: var(--swty-lime);
+  background-image: url("https://bettysgraphics.neocities.org/images/backgrounds/pattern%20562.gif");
   text-align: center;
   font-size: small;
 }
@@ -269,14 +273,14 @@ img {
   text-shadow: initial;
 }
 
-/* ---------------- WEBRINGS ---------------- */
+/* ---------------- TAGS ---------------- */
 
-.webrings {
+.tags {
   display: flex;
   flex-wrap: wrap;
 }
 
-.webrings a img {
+.tag a img {
   width: 88px;
   height: auto;
 }
@@ -302,9 +306,13 @@ img {
     align-items: center;
   }
 
-  .main-content .flex-container .center-panel,
-  .main-content .flex-container .side-panel {
+  .flex-container .center-panel,
+  .flex-container .side-panel {
     width: 90%;
+  }
+
+  .flex-container .center-panel {
+    order: -1;
   }
 
   @keyframes scroll {

@@ -193,6 +193,11 @@ img {
   background-image: url("https://bettysgraphics.neocities.org/images/backgrounds/pattern%2053.gif");
 }
 
+.background-color-4 {
+  background-image: url("images/halo-infinite.png");
+  background-size: cover;
+}
+
 .no-display-desktop {
   display: none;
 }
@@ -209,7 +214,6 @@ img {
 }
 
 .panel {
-  padding: 2vh;
   max-width: 720px;
 }
 
@@ -217,6 +221,7 @@ img {
   display: flex;
   justify-content: center;
   gap: 1vw;
+  padding-bottom: 1vh;
 }
 
 .flex-container .center-panel {
@@ -259,28 +264,29 @@ img {
   align-self: center;
 }
 
+.main-content {
+  margin-bottom: 25px;
+}
+
 /* ---------------- NAV ---------------- */
 .back-home {
   width: 150px;
-  padding-left: 1%;
 }
 
 .topnav {
   overflow: hidden;
-  width: 40%;
   font-size: large;
   display: flex;
   margin: auto;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-right: 1.5vw;
+  width: 50vw;
 }
 
 .topnav h1 {
   margin: center;
   text-align: center;
-  width: 100%;
 }
 
 /* ---------------- SCROLL ---------------- */
@@ -331,7 +337,15 @@ img {
   background-image: url("https://bettysgraphics.neocities.org/images/gadgets/xbox%201.gif");
 }
 
-/* ---------------- QUICKPOSTS ---------------- */
+/* ---------------- XBOX-LIVE ---------------- */
+
+.phil-spencer {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vh;
+}
+
 /* ---------------- MOBILE ---------------- */
 
 @media (max-width: 1200px) {

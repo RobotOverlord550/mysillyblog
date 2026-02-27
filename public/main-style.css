@@ -18,6 +18,92 @@
   --swty-dark-gray: #333c57;
 }
 
+/* animations */
+
+@keyframes rainbow {
+  0% {
+    background-color: red;
+  }
+
+  14.3% {
+    background-color: orange;
+  }
+
+  28.6% {
+    background-color: yellow;
+  }
+
+  42.9% {
+    background-color: lime;
+  }
+
+  57.4% {
+    background-color: cyan;
+  }
+
+  71.4% {
+    background-color: plum;
+  }
+
+  85.7% {
+    background-color: violet;
+  }
+
+  100% {
+    background-color: red;
+  }
+}
+
+@keyframes rainbow-border {
+  0% {
+    border-color: red;
+  }
+
+  14.3% {
+    border-color: orange;
+  }
+
+  28.6% {
+    border-color: yellow;
+  }
+
+  42.9% {
+    border-color: lime;
+  }
+
+  57.4% {
+    border-color: cyan;
+  }
+
+  71.4% {
+    border-color: plum;
+  }
+
+  85.7% {
+    border-color: violet;
+  }
+
+  100% {
+    border-color: red;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+
+  50% {
+    transform: translateX(300%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* font */
+
 .federant-regular {
   font-family: "Federant", serif;
   font-weight: 400;
@@ -31,7 +117,7 @@
   font-style: normal;
 }
 
-/* ---------------- BASE ---------------- */
+/* core */
 
 body {
   font-size: large;
@@ -71,39 +157,6 @@ th {
   font-size: larger;
 }
 
-@keyframes rainbow {
-  0% {
-    background-color: red;
-  }
-
-  14.3% {
-    background-color: orange;
-  }
-
-  28.6% {
-    background-color: yellow;
-  }
-
-  42.9% {
-    background-color: lime;
-  }
-
-  57.4% {
-    background-color: cyan;
-  }
-
-  71.4% {
-    background-color: plum;
-  }
-
-  85.7% {
-    background-color: violet;
-  }
-
-  100% {
-    background-color: red;
-  }
-}
 
 hr {
   background-color: red;
@@ -128,41 +181,7 @@ img {
   image-rendering: pixelated;
 }
 
-/* ---------------- UTILS ---------------- */
-
-@keyframes rainbow-border {
-  0% {
-    border-color: red;
-  }
-
-  14.3% {
-    border-color: orange;
-  }
-
-  28.6% {
-    border-color: yellow;
-  }
-
-  42.9% {
-    border-color: lime;
-  }
-
-  57.4% {
-    border-color: cyan;
-  }
-
-  71.4% {
-    border-color: plum;
-  }
-
-  85.7% {
-    border-color: violet;
-  }
-
-  100% {
-    border-color: red;
-  }
-}
+/* general styling */
 
 .general-border {
   border-style: solid;
@@ -198,6 +217,8 @@ img {
   background-size: cover;
 }
 
+/* utils */
+
 .no-display-desktop {
   display: none;
 }
@@ -206,7 +227,7 @@ img {
   display: initial;
 }
 
-/* ---------------- LAYOUT ---------------- */
+/* types */
 .title {
   text-align: center;
   font-size: xx-large;
@@ -220,8 +241,8 @@ img {
 .flex-container {
   display: flex;
   justify-content: center;
-  gap: 1vw;
-  padding-bottom: 1vh;
+  flex-direction: row;
+  gap: 2vh;
 }
 
 .flex-container .center-panel {
@@ -249,6 +270,12 @@ img {
   text-align: right;
 }
 
+.vertical-flex-container {
+  display: flex;
+  gap: 2vh;
+  flex-direction: column;
+}
+
 .profile-pic img {
   width: 100%
 }
@@ -265,10 +292,10 @@ img {
 }
 
 .main-content {
-  margin-bottom: 25px;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
 }
 
-/* ---------------- NAV ---------------- */
 .back-home {
   width: 150px;
 }
@@ -289,22 +316,6 @@ img {
   text-align: center;
 }
 
-/* ---------------- SCROLL ---------------- */
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0%);
-  }
-
-  50% {
-    transform: translateX(300%);
-  }
-
-  100% {
-    transform: translateX(0%);
-  }
-}
-
 .infinite-scroll {
   overflow: hidden;
   animation: scroll 30s linear infinite;
@@ -319,8 +330,6 @@ img {
   text-shadow: initial;
 }
 
-/* ---------------- TAGS ---------------- */
-
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -331,13 +340,9 @@ img {
   height: auto;
 }
 
-/* ---------------- CHAT ---------------- */
-
 .chat {
   background-image: url("https://bettysgraphics.neocities.org/images/gadgets/xbox%201.gif");
 }
-
-/* ---------------- XBOX-LIVE ---------------- */
 
 .phil-spencer img {
   display: block;
@@ -346,7 +351,7 @@ img {
   width: 50vh;
 }
 
-/* ---------------- MOBILE ---------------- */
+/* Phone Compatibility */
 
 @media (max-width: 1200px) {
   body {

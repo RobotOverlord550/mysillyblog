@@ -261,11 +261,6 @@ img {
   width: 15%;
 }
 
-.flex-container .side-panel-left * {
-  text-align: left;
-}
-
-.flex-container .side-panel-right *,
 .flex-container .side-panel-left-img {
   text-align: right;
 }
